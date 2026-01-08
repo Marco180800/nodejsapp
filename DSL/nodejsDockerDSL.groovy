@@ -14,9 +14,9 @@ job('Aplicacion Node.js Docker DSL') {
     }
     steps {
         dockerBuildAndPublish {
-            repositoryName('macloujulian/nodejsapp')
+            repositoryName('Marco180800/nodejsapp')
             tag('${GIT_REVISION,length=7}')
-            registryCredentials('docker-hub')
+            registryCredentials('marcomar18')
             forcePull(false)
             createFingerprints(false)
             skipDecorate()
